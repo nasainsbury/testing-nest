@@ -1,0 +1,1 @@
+ALTER TABLE "app"."notes" ADD COLUMN "updated_at" timestamp DEFAULT CURRENT_TIMESTAMP;

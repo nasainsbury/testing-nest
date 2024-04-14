@@ -1,0 +1,1 @@
+ALTER TABLE "app"."notes" ADD COLUMN "description" text;

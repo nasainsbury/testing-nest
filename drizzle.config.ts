@@ -4,11 +4,8 @@ export default {
   schema: './src/drizzle/schema.ts',
   out: './drizzle',
   driver: 'pg',
+
   dbCredentials: {
-    host: 'localhost',
-    port: 5432,
-    user: 'user',
-    password: 'password',
-    database: 'app',
+    connectionString: process.env.DATABASE_URL,
   },
 } satisfies Config;

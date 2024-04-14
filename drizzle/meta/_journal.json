@@ -8,6 +8,34 @@
       "when": 1713114855319,
       "tag": "0000_spooky_bloodaxe",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1713131303971,
+      "tag": "0001_nifty_night_thrasher",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1713131904821,
+      "tag": "0002_breezy_kate_bishop",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1713131987519,
+      "tag": "0003_complex_talisman",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1713132225207,
+      "tag": "0004_oval_crystal",
+      "breakpoints": true
     }
   ]
 }

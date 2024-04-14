@@ -1,17 +1,24 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { NotesService } from './notes.service';
+import { CreateNoteDto } from './dto/create.dto';
 
 @Controller('notes')
 export class NotesController {
   constructor(private notesService: NotesService) {}
 
   @Get('/')
-  async getNotes() {
-    return await this.notesService.getAll();
+  search() {
+    return this.notesService.getAll();
   }
 
   @Get('/:id')
-  getNote(@Param('id') id: string) {
-    return this.getNote(id);
+  get(@Param('id') id: string) {
+    return this.notesService.get(id);
+  }
+
+  @Post('/')
+  async create(@Body() body: CreateNoteDto) {
+    await void this.notesService.create(body);
+    return {};
   }
 }
